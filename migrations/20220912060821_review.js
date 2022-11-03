@@ -1,7 +1,7 @@
 exports.up = function(knex) {
     return knex.schema.createTable('review', function (table) {
         table.increments();
-        table.string('comment');
+        table.string('comment', [5000]);
         table.boolean('like');
         table.integer('gameId').references('game.id').onDelete('CASCADE');
         table.integer('userId').references('user.id').onDelete('CASCADE');
