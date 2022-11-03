@@ -5,7 +5,9 @@ exports.up = function(knex) {
         table.string('name')
         table.float('price')
         table.string('image')
-        table.string('intro', [5000])
+        table.string('size')
+        table.string('file')
+        table.string('intro', [10000])
         table.string('deleted').defaultTo(null);
         table.timestamp('created').defaultTo(knex.fn.now());
         table.timestamp('updated').defaultTo(knex.fn.now());

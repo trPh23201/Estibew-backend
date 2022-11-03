@@ -3,6 +3,8 @@ exports.up = function(knex) {
         table.increments();
         table.string('content');
         table.string('title')
+        table.string('sender')
+        table.string('image')
         table.integer('userId').references('user.id').onDelete('CASCADE');
         table.timestamp('created').defaultTo(knex.fn.now());
     });
