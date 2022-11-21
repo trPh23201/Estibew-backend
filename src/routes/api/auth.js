@@ -11,6 +11,7 @@ const Notification = require('../../models/Notification');
 const SocketIOServer = require('../../services/socketio');
 
 router.post('/login', async (req, res) => {
+    const { admin } = req.query
     try {
         const { email, password } = req.body
         if (email === '' || password === '') throw new Error('Please enter email and password')
@@ -23,6 +24,10 @@ router.post('/login', async (req, res) => {
             throw new Error('Unverified email')
         } else if (user.banned) {
             throw new Error('User banned')
+        }
+
+        if(user.role === 0 && admin==='yes') {
+            throw new Error('Invalid admin account')
         }
 
         res.status(200).json({

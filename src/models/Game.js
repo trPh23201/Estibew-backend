@@ -25,11 +25,10 @@ class Game extends BaseModel {
     static get jsonSchema() {
         return {
             type: 'object',
-            required: ['name'],
             properties: {
                 id: { type: 'integer' },
                 name: { type: 'string' },
-                price: { type: 'float' },
+                price: { type: 'number' },
                 image: { type: 'string' },
                 intro: { type: 'string', minLength: 1, maxLength: 10000 }
             }

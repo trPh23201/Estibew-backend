@@ -19,7 +19,7 @@ exports.seed = async function (knex) {
       '2004-01-01T00:00:00.000Z'
     );
 
-    await knex('user').insert({
+    const user = await knex('user').insert({
       username: userName,
       email,
       isEmailVerified: true,
@@ -28,23 +28,35 @@ exports.seed = async function (knex) {
       password,
       birthday,
       avatar: faker.image.avatar()
-    });
+    }, '*');
 
     await knex('privacy').insert({
-      userId: i
+      userId: user[0].id
     });
 
     await knex('user_read').insert({
-      userId: i
+      userId: user[0].id
     });
-    // console.log({
-    //   username: userName,
-    //   email,
-    //   isEmailVerified: true,
-    //   gender: _.sample(['male', 'female']),
-    //   phone,
-    //   password,
-    //   birthday,
-    // })
+
   }
+
+  const admplain = "123456"; // faker.internet.password();
+  const admpassword = bcrypt.hashSync(admplain, bcrypt.genSaltSync(10));
+
+  const admin = await knex('user').insert({
+    username: "admin",
+    email: "admin",
+    isEmailVerified: true,
+    gender: _.sample(['male', 'female']),
+    password: admpassword,
+    role: 1
+  }, '*');
+
+  await knex('privacy').insert({
+    userId: admin[0].id
+  });
+
+  await knex('user_read').insert({
+    userId: admin[0].id
+  });
 };

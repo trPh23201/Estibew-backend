@@ -13,6 +13,7 @@ const privacy = require('./privacy')
 const user_read = require('./user_read')
 const notification = require('./notification')
 const middleware = require('../../middleware')
+const admin = require('./admin')
 
 router.use('/game', game)
 router.use('/tag', tag)
@@ -26,5 +27,6 @@ router.use('/wishlist', middleware.restrict, wishlist)
 router.use('/payment', middleware.restrict, payment)
 router.use('/user_read', middleware.restrict, user_read)
 router.use('/notification', middleware.restrict, notification)
+router.use('/admin', middleware.restrictAdmin, admin)
 
 module.exports = router

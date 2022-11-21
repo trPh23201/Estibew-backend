@@ -7,7 +7,7 @@ class Game_tag extends BaseModel {
     static get jsonSchema() {
         return {
             type: 'object',
-            required: ['gameId', 'userId'],
+            required: ['gameId', 'tagId'],
             properties: {
                 id: { type: 'integer' },
                 gameId: { type: 'integer' },

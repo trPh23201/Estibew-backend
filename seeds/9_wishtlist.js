@@ -4,7 +4,7 @@
  */
 exports.seed = async function (knex) {
   await knex('wishlist').insert([
-    { gameId: 1, userId: 1 },
+    { gameId: 1, userId: 3 },
     { gameId: 1, userId: 2 },
     { gameId: 1, userId: 9 },
 
@@ -13,17 +13,17 @@ exports.seed = async function (knex) {
 
     { gameId: 3, userId: 11 },
 
-    { gameId: 4, userId: 1 },
+    { gameId: 4, userId: 3 },
     { gameId: 4, userId: 2 },
 
-    { gameId: 5, userId: 1 },
+    { gameId: 5, userId: 3 },
     { gameId: 5, userId: 8 },
 
     { gameId: 6, userId: 5 },
     { gameId: 6, userId: 12 },
     { gameId: 6, userId: 6 },
 
-    { gameId: 7, userId: 1 },
+    { gameId: 7, userId: 3 },
     { gameId: 7, userId: 10 },
 
     { gameId: 8, userId: 14 },

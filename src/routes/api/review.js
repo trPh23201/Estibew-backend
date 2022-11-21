@@ -34,6 +34,7 @@ router.post('/create', async function (req, res) {
             ...result
         })
     } catch (error) {
+        console.log(error);
         res.status(400).json({
             success: false,
             code: 400,

@@ -31,4 +31,12 @@ const restrict = function (req, res, next) {
     }
 }
 
-module.exports = { base, checkin, restrict }
+const restrictAdmin = function (req, res, next) {
+    if (req.user && req.user.role !== 0) {
+        next()
+    } else {
+        res.status(401).json({ success: false, message: "Unauthorized" })
+    }
+}
+
+module.exports = { base, checkin, restrict, restrictAdmin }

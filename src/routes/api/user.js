@@ -56,7 +56,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/:id/update', restrict, parser.single('avatar'), async (req, res) => {
+router.put('/:id/update', restrict, parser.single('avatar'), async (req, res) => {
     const { id } = req.params
     const data = req.body
     try {

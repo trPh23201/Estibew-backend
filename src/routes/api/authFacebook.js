@@ -56,10 +56,17 @@ router.get('/callback', passport.authenticate('facebook', {
     failureRedirect: `${setting.CLIENT_URL}/404`,
 }),
     function (req, res) {
-        res.status(200).json({
-            success: true,
-            token: req.user.toJsonWithToken()
-        })
+        if (req.user.banned) {
+            res.status(400).json({
+                success: false,
+                message: "Sorry you was banned, please contact to admin!"
+            })
+        } else {
+            res.status(200).json({
+                success: true,
+                token: req.user.toJsonWithToken()
+            })
+        }
     }
 )
 

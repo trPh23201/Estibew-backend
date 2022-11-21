@@ -102,6 +102,312 @@ exports.seed = async function (knex) {
             directx: "Version 11",
             storage: "50 GB available space",
             gameId: 11
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 12
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 13
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 14
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 15
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 16
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 17
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 18
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 19
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 20
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 21
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 22
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 23
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 24
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 25
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 26
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 27
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 28
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 29
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 30
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 31
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 32
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 33
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 34
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 35
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 36
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 37
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 38
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 39
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 40
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 41
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 42
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 43
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 44
+        },
+        {
+            os: "64-bit Windows 7, Windows 8.1, Windows 10",
+            processor: "Intel Core i5-6600K / AMD Ryzen 5 1600",
+            memory: "16 GB RAM",
+            graphic: "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+            directx: "Version 11",
+            storage: "50 GB available space",
+            gameId: 45
         }
     ]);
 };
