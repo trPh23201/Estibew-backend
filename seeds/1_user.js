@@ -27,7 +27,9 @@ exports.seed = async function (knex) {
       phone,
       password,
       birthday,
-      avatar: faker.image.avatar()
+      avatar: faker.image.avatar(),
+      provider: _.sample(['google', 'facebook', null]),
+      providerId: i,
     }, '*');
 
     await knex('privacy').insert({

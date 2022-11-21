@@ -3,6 +3,9 @@
  * @returns { Promise<void> } 
  */
 exports.seed = async function (knex) {
+  const _ = require('lodash');
+  const moment = require('moment/moment');
+
   await knex('purchased').insert([
     { gameId: 1, userId: 1 },
     { gameId: 1, userId: 2 },
@@ -62,4 +65,18 @@ exports.seed = async function (knex) {
     { gameId: 11, userId: 2 },
     { gameId: 11, userId: 6 },
   ]);
+
+  for (let i = 1; i <= 20; i++) {
+    await knex('purchased').insert({
+      gameId: _.random(1, 10),
+      userId: _.random(1, 20),
+      created: moment().subtract(1, 'days')
+    })
+
+    await knex('purchased').insert({
+      gameId: _.random(1, 10),
+      userId: _.random(1, 20),
+      created: moment().subtract(30, 'days')
+    })
+  }
 };
