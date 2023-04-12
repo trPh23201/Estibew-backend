@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 module.exports = { 
-    CLIENT_URL: "http://localhost:3000",
+    CLIENT_URL: "https://estibew-frontend.vercel.app",
     SERVER_URL: `http://localhost:${process.env.SERVER_PORT || 5000}`,
     JWT_SECRET: "sdjsadn123mkanevajnsecszpp1",
 
