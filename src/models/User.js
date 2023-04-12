@@ -1,5 +1,5 @@
 const { Model } = require("objection");
-const BaseModel = require("./baseModel");
+const BaseModel = require("./BaseModel");
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const setting = require('../setting/env');

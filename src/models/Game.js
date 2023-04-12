@@ -1,5 +1,5 @@
 const { Model } = require("objection");
-const BaseModel = require("./baseModel");
+const BaseModel = require("./BaseModel");
 
 class Game extends BaseModel {
     static tableName = 'game'

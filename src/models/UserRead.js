@@ -1,4 +1,4 @@
-const BaseModel = require("./baseModel");
+const BaseModel = require("./BaseModel");
 
 class UserRead extends BaseModel {
     static tableName = 'user_read'
