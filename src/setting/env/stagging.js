@@ -2,7 +2,7 @@ require('dotenv').config()
 
 module.exports = { 
     CLIENT_URL: "https://estibew-frontend.vercel.app",
-    SERVER_URL: `http://localhost:${process.env.SERVER_PORT || 5000}`,
+    SERVER_URL: "https://estibew.online",
     JWT_SECRET: "sdjsadn123mkanevajnsecszpp1",
 
     NODEMAILER: {
