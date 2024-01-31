@@ -30,4 +30,4 @@ jobs:
     steps:
       - name: echo current env
         run: |
-          echo "${{vars.DOCKERHUB_REPOSITORY}}"
+          echo "${{env.DOCKERHUB_REPOSITORY}}"
