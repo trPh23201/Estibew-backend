@@ -14,5 +14,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build the Docker image
         run: |
-          docker build . --file Dockerfile --tag josephpham2321/estibew_backend:$(date +%s)
           docker push josephpham2321/estibew_backend:latest
