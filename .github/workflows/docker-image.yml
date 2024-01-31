@@ -6,6 +6,8 @@ on:
   pull_request:
     branches: ["main"]
 
+env: "stg"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,3 +23,8 @@ jobs:
         run: |
           docker build . --file Dockerfile --tag ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
           docker push ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
+
+      - name: echo current env
+        run: |
+          echo "${{env.DOCKERHUB_REPOSITORY}}"
+          docker push "${{env.DOCKERHUB_REPOSITORY}}"/estibew_backend:latest"
