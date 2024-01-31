@@ -40,7 +40,7 @@ const connect = () => {
         .catch((e) => console.log(e));
     })
     .catch((error) => {
-      console.log("🚫 db connect error retrying connect");
+      console.log("🚫 database connect error retrying connect");
       setTimeout(() => {
         connect();
       }, 4000);
