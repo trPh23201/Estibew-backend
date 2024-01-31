@@ -19,9 +19,8 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build the Docker image
         run: |
-          docker build -t estibew_backend .
-          docker tag estibew_backend ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
-          docker push ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
+          docker build . --file Dockerfile --tag josephpham2321/estibew_backend:latest
+          docker push josephpham2321/estibew_backend:latest
 
   # env_test:
   #   runs-on: ubuntu-latest
