@@ -29,7 +29,7 @@ const SocketIOServer = require("./services/socketio");
 const knex = Knex(config.databaseConfig);
 const connect = () => {
   knex
-    .raw("select 1+1 as result")
+    .raw("select 1+11 as result")
     .then((data) => {
       console.log("📁 Database connected!");
       knex.migrate
