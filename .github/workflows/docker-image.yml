@@ -23,11 +23,11 @@ jobs:
           docker tag estibew_backend ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
           docker push ${{vars.DOCKERHUB_REPOSITORY}}/estibew_backend:latest
 
-  # env_test:
-  #   runs-on: ubuntu-latest
-  #   env: "stg"
-  #   steps:
-  #     - name: echo current env
-  #       run: |
-  #         echo "${{env.DOCKERHUB_REPOSITORY}}"
-  #         docker push "${{env.DOCKERHUB_REPOSITORY}}"/estibew_backend:latest"
+  using_environment:
+    runs-on: ubuntu-latest
+    env:
+      name: stg
+    steps:
+      - name: echo current env
+        run: |
+          echo "${{vars.DOCKERHUB_REPOSITORY}}"
