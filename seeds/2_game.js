@@ -642,7 +642,8 @@ exports.seed = async function (knex) {
 
     let tagArr = tags.split(",");
     tagArr = tagArr.map((tag) => tag.trim());
-    tagArr.forEach(async (tag) => {
+    for (let index = 0; index < tagArr.length; index++) {
+      const tag = tagArr[index];
       const existTag = await knex("tag").where("name", tag);
       const findTag = null;
       if (existTag.length === 0) {
@@ -652,7 +653,7 @@ exports.seed = async function (knex) {
         gameId: game[0].id,
         tagId: existTag.length > 0 ? existTag[0].id : findTag[0].id,
       });
-    });
+    }
 
     await knex("developer").insert({
       name: developers,
