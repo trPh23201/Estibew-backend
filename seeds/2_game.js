@@ -625,9 +625,7 @@ exports.seed = async function (knex) {
     },
   ];
 
-  for (let i = 0; i < games.length; i++) {
-    const item = array[i];
-
+  games.forEach(async (item) => {
     const { developers, publishers, tags } = item;
     const game = await knex("game").insert(
       {
@@ -666,5 +664,5 @@ exports.seed = async function (knex) {
       name: publishers,
       gameId: game[0].id,
     });
-  }
+  });
 };
