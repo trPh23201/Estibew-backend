@@ -645,7 +645,7 @@ exports.seed = async function (knex) {
     for (let index = 0; index < tagArr.length; index++) {
       const tag = tagArr[index];
       const existTag = await knex("tag").where("name", tag);
-      const findTag = null;
+      let findTag = null;
       if (existTag.length === 0) {
         findTag = await knex("tag").insert({ name: tag }, "*");
       }
