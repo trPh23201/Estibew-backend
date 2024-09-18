@@ -59,7 +59,7 @@ app.use(
 ); //Form submit HTML
 app.use(express.json()); //For fetch, XMLRequest, axios,....
 
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use("/static", express.static(path.join(__dirname, "..", "public")));
 
 app.use(middleware.checkin);
 
