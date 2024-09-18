@@ -667,6 +667,4 @@ exports.seed = async function (knex) {
       gameId: game[0].id,
     });
   }
-
-  console.log("sdsadsada", existTag);
 };
