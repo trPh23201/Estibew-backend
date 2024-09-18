@@ -7,7 +7,7 @@ module.exports = {
 
   NODEMAILER: {
     EMAIL: "gnoob53@gmail.com",
-    PASSWORD: "vbbqzleavztewocu",
+    PASSWORD: "wyxi jeem nqcq sluf",
   },
 
   STRIPE: {
