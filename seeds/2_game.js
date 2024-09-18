@@ -625,17 +625,18 @@ exports.seed = async function (knex) {
     },
   ];
 
-  games.forEach(async (item) => {
-    const { developers, publishers, tags } = item;
+  const existTag = [];
+  for (let index = 0; index < games.length; index++) {
+    const { developers, publishers, tags } = games[index];
     const game = await knex("game").insert(
       {
-        released: item.released,
-        name: item.name,
-        price: item.price,
-        image: item.image,
-        size: item.size,
-        file: item.file,
-        intro: item.intro,
+        released: games[index].released,
+        name: games[index].name,
+        price: games[index].price,
+        image: games[index].image,
+        size: games[index].size,
+        file: games[index].file,
+        intro: games[index].intro,
       },
       "*"
     );
@@ -644,14 +645,15 @@ exports.seed = async function (knex) {
     tagArr = tagArr.map((tag) => tag.trim());
     for (let index = 0; index < tagArr.length; index++) {
       const tag = tagArr[index];
-      const existTag = await knex("tag").where("name", tag);
-      let findTag = null;
-      if (existTag.length === 0) {
-        findTag = await knex("tag").insert({ name: tag }, "*");
+      let newTag = null;
+      const matchedTag = existTag.find((t) => t.name === tag);
+      if (!matchedTag) {
+        newTag = await knex("tag").insert({ name: tag }, "*");
+        existTag.push(newTag[0]);
       }
       await knex("game_tag").insert({
         gameId: game[0].id,
-        tagId: existTag.length > 0 ? existTag[0].id : findTag[0].id,
+        tagId: matchedTag ? matchedTag.id : newTag[0].id,
       });
     }
 
@@ -664,5 +666,7 @@ exports.seed = async function (knex) {
       name: publishers,
       gameId: game[0].id,
     });
-  });
+  }
+
+  console.log("sdsadsada", existTag);
 };
