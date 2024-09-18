@@ -16,8 +16,8 @@ function sendVerifyLink(req, res, user) {
     subject: "Verrify your email",
     html: `<h2>Thanks for registering on our site</h2>
                 <h4>Please verify your email to continue...</h4>
-                <a href="http://${
-                  req.headers.host
+                <a href="${
+                  setting.SERVER_URL
                 }/api/auth/verify_email?token=${user.toJsonWithToken()}">
                 Click to verify your email
                 </a>`,
